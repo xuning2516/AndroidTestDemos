@@ -14,6 +14,31 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.persistencetest.MainActivity">
 
-    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-        android:text="Hello World!" />
+    <EditText
+        android:id="@+id/inputContent"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:hint="输入文件内容"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/saveContent"
+        android:text="保存"
+        android:layout_below="@id/inputContent"
+        android:onClick="onClick"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/saveContent"
+        android:layout_below="@id/inputContent"
+        android:id="@+id/getContent"
+        android:text="读取"
+        android:onClick="onClick"/>
+    <TextView
+        android:id="@+id/showContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="4"
+        android:layout_margin="10dp"
+        android:layout_below="@id/saveContent"/>
 </RelativeLayout>
