@@ -11,6 +11,7 @@ package com.royole.databasetest;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 import android.widget.Toast;
 
 /**
@@ -18,6 +19,7 @@ import android.widget.Toast;
  */
 public class MyDatabaseHelper extends SQLiteOpenHelper {
     private Context mContext;
+    private static final String TAG = "MyDatabaseHelper";
     public static final String CREATE_BOOK = "create table Book("
             +"id integer primary key autoincrement, "
             +"author text, "
@@ -36,7 +38,7 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(CREATE_BOOK);
-        Toast.makeText(mContext,"create successed",Toast.LENGTH_SHORT).show();
+        logd("onCreate");
     }
 
     @Override
@@ -46,5 +48,9 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         db.execSQL(CREATE_BOOK);
         db.execSQL(CREATE_CATAGORY);
         Toast.makeText(mContext,"upgrade successed",Toast.LENGTH_SHORT).show();
+    }
+
+    private void logd(String msg){
+        Log.d(TAG, "zhanghao: "+ msg);
     }
 }

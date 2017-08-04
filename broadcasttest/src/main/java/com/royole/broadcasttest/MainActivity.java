@@ -16,6 +16,9 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class MainActivity extends BaseActivity {
     private long lastTime ;
     private static final String TAG = "MainActivity";
@@ -42,11 +45,20 @@ public class MainActivity extends BaseActivity {
 
         long currentTime = System.currentTimeMillis();
         Log.d(TAG, "onBackPressed: lastTime "+lastTime+" ,currentTime:"+currentTime);
-        if(lastTime == 0 || currentTime - lastTime > 2000){
-            Toast.makeText(MainActivity.this,"再按一次退出",Toast.LENGTH_SHORT).show();
+        long currentThreadTime = SystemClock.currentThreadTimeMillis();
+        Log.d(TAG, "onBackPressed: currentThreadTime "+ currentThreadTime);
+        long uptTime = SystemClock.uptimeMillis();
+        Log.d(TAG, "onBackPressed: uptTime "+uptTime);
+        long elapsedTime = SystemClock.elapsedRealtime();
+        Log.d(TAG, "onBackPressed: elapsedTime "+ elapsedTime);
+        Log.d(TAG, "onBackPressed: refFormatNowDate "+ refFormatNowDate());
+        if(lastTime == 0 || currentTime - lastTime < 2000){
+//            Toast.makeText(MainActivity.this,"再按一次退出",Toast.LENGTH_SHORT).show();
+            Log.d(TAG, "onBackPressed: less");
         }else{
+            Log.d(TAG, "onBackPressed: more");
             MyApplication myApplication = (MyApplication) getApplication();
-            myApplication.finishAll();
+//            myApplication.finishAll();
 
         }
         lastTime = currentTime;
@@ -56,5 +68,12 @@ public class MainActivity extends BaseActivity {
     protected void onDestroy() {
         super.onDestroy();
         Log.d(TAG, "onDestroy: "+this);
+    }
+
+    public String refFormatNowDate() {
+        Date nowTime = new Date(System.currentTimeMillis());
+        SimpleDateFormat sdFormatter = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss.SSS");
+        String retStrFormatNowDate = sdFormatter.format(nowTime);
+        return retStrFormatNowDate;
     }
 }

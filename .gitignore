@@ -53,3 +53,6 @@ google-services.json
 freeline.py
 freeline/
 freeline_project_description.json
+libs/
+src/main/res/drawable/
+src/main/res/values-zh/

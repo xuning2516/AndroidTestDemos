@@ -14,6 +14,8 @@ import android.content.UriMatcher;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
+import android.os.Process;
+import android.util.Log;
 
 public class DatabaseProvider extends ContentProvider {
 
@@ -107,6 +109,9 @@ public class DatabaseProvider extends ContentProvider {
     public boolean onCreate() {
         // TODO: Implement this to initialize your content provider on startup.
         dbHelper = new MyDatabaseHelper(getContext(),"Book.db",null,2);
+        Thread currentThread = Thread.currentThread();
+        Log.d(TAG, "zhanghao onCreate: pid "+Process.myPid()+" tid " + Process.myTid()+" uid "+ Process.myUid());
+        Log.d(TAG, "zhanghao onCreate: tid "+currentThread.getId()+" name "+currentThread.getName());
         return true;
     }
 
