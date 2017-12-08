@@ -13,7 +13,10 @@
       <module fileurl="file://$PROJECT_DIR$/providertest/providertest.iml" filepath="$PROJECT_DIR$/providertest/providertest.iml" />
       <module fileurl="file://$PROJECT_DIR$/recyclerview/recyclerview.iml" filepath="$PROJECT_DIR$/recyclerview/recyclerview.iml" />
       <module fileurl="file://$PROJECT_DIR$/runtimepermissiontest/runtimepermissiontest.iml" filepath="$PROJECT_DIR$/runtimepermissiontest/runtimepermissiontest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/servicebestpractice/servicebestpractice.iml" filepath="$PROJECT_DIR$/servicebestpractice/servicebestpractice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tabhosttest/tabhosttest.iml" filepath="$PROJECT_DIR$/tabhosttest/tabhosttest.iml" />
       <module fileurl="file://$PROJECT_DIR$/uiwidgettest/uiwidgettest.iml" filepath="$PROJECT_DIR$/uiwidgettest/uiwidgettest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/webviewtest/webviewtest.iml" filepath="$PROJECT_DIR$/webviewtest/webviewtest.iml" />
     </modules>
   </component>
 </project>

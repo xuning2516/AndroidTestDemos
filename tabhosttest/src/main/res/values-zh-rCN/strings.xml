@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2017. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  ~ Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
+  ~ Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
+  ~ Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
+  ~ Vestibulum commodo. Ut rhoncus gravida arcu.
+  -->
+
+<resources>
+    <string name="app_name">柔宇手势</string>
+    <string name="settings_name">设置</string>
+    <string name="score_settings">给予评分</string>
+    <string name="app_info">应用信息</string>
+    <string name="more_trigger">更多触发区</string>
+    <string name="action_search">搜索</string>
+</resources>
