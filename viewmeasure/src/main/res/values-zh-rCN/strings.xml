@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PrivacyLoading</string>
+    <string name="tip_text">切换至主人模式</string>
+    <string name="tip_text_exit">切换至访客模式。</string>
+    <string name="success">成功切换。</string>
+</resources>

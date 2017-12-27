@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ViewMeasure</string>
+	<string name="tip_text">Switching to Master Mode.</string>
+    <string name="tip_text_exit">Switching to Guest Mode.</string>
+</resources>

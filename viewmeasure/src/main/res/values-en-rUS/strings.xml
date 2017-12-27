@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PrivacyLoading</string>
+    <string name="tip_text">Switching to Master Mode.</string>
+    <string name="tip_text_exit">Switching to Guest Mode.</string>
+    <string name="success">Success.</string>
+</resources>
